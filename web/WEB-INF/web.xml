@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+    <welcome-file-list>
+        <welcome-file>start_page.jsp</welcome-file>
+        <welcome-file>contractors_list.jsp</welcome-file>
+        <welcome-file>contractor_table.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>ServletVerification</servlet-name>
+        <servlet-class>ServletVerification</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletVerification</servlet-name>
+        <url-pattern>/ServletVerification</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletInvoice</servlet-name>
+        <servlet-class>ServletInvoiceTable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletInvoice</servlet-name>
+        <url-pattern>/ServletInvoiceTable</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletList</servlet-name>
+        <servlet-class>ServletContractorsList</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletList</servlet-name>
+        <url-pattern>/ServletContractorsList</url-pattern>
+    </servlet-mapping>
+
+</web-app>

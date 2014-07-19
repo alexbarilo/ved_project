@@ -1,0 +1,81 @@
+#login-form {
+    text-align: center;
+}
+
+#list-div {
+    position: absolute;
+}
+
+#contractor-name-div {
+    position: absolute;
+    left: 270px;
+}
+
+#invoices-div {
+    position: absolute;
+    top: 48px;
+    left: 270px;
+}
+
+#payments-name {
+    position: absolute;
+    left: 1000px;
+}
+
+#payments-div {
+    position: absolute;
+    top: 47px;
+    left: 1000px;
+}
+
+#select {
+    width: 200px;
+}
+
+#invoice-input-name td{
+    width: 110px;
+}
+
+#invoices-list{
+    border: 1px black;
+    border-collapse: collapse;
+}
+
+#invoices-list th {
+    border-color: black;
+    width: 110px;
+}
+
+#invoices-list td {
+    border: 1px solid black;
+    height: 20px;
+    text-align: center;
+}
+
+#invoices-list thead tr th{
+    border: 1px solid black;
+}
+
+#payment-input-name td{
+    width: 110px;
+}
+
+#payments-list{
+    border: 1px black;
+    border-collapse: collapse;
+}
+
+#payments-list th {
+    border-color: black;
+    width: 110px;
+}
+
+#payments-list td {
+    border: 1px solid black;
+    height: 20px;
+    text-align: center;
+}
+
+#payments-list thead tr th{
+    border: 1px solid black;
+}
