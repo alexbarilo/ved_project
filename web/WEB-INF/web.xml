@@ -13,7 +13,7 @@
 
     <servlet>
         <servlet-name>ServletVerification</servlet-name>
-        <servlet-class>ServletVerification</servlet-class>
+        <servlet-class>controller.ServletVerification</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletVerification</servlet-name>
@@ -21,7 +21,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ServletInvoice</servlet-name>
-        <servlet-class>ServletInvoiceTable</servlet-class>
+        <servlet-class>controller.ServletInvoiceTable</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletInvoice</servlet-name>
@@ -29,9 +29,8 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ServletList</servlet-name>
-        <servlet-class>ServletContractorsList</servlet-class>
+        <servlet-class>controller.ServletContractorsList</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>ServletList</servlet-name>
         <url-pattern>/ServletContractorsList</url-pattern>
