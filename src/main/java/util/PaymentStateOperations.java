@@ -12,7 +12,6 @@ import java.util.List;
 public class PaymentStateOperations {
 
     public String getPaymentState (float dueState, float sumBalance) {
-        System.out.println("dueState" + dueState + " sumBalance" + sumBalance);
         if (sumBalance >= 0) {return "paid";}
         else if (sumBalance < 0 && dueState < 0) {
             return "overdue";

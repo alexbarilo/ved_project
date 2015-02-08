@@ -58,7 +58,7 @@ public class ServletContractorsList extends HttpServlet{
 
         ArrayList<ContractorBean> listOfContractors = (ArrayList) managementDAO.addContractor(contractorsName, contractNumber);
         context.setAttribute("listOfContractors", listOfContractors);
-        requestDispatcher = req.getRequestDispatcher("contractor_table.jsp");
+        requestDispatcher = req.getRequestDispatcher("contractors_list.jsp");
         requestDispatcher.forward(req,resp);
     }
 
