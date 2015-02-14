@@ -14,6 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+*The servlet process requests from contractor-list.jsp
+*The application is not multi-threading thus all the attributes are stored in application-scope.
+*/
+
 public class ServletContractorsList extends HttpServlet{
 
     private ManagementDAO managementDAO;

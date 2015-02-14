@@ -5,11 +5,12 @@
 <head>
     <title></title>
     <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/form-validation.js"></script>
 </head>
 <body>
     <div id="list-div">
 
-        <form id="contractors-datainput" action="ServletContractorsList" method="POST" enctype="application/x-www-form-urlencoded">
+        <form id="contractors-datainput" action="ServletContractorsList" method="POST" enctype="application/x-www-form-urlencoded" onSubmit="return checkContractorForm();">
             Contractor's name<br>
             <input type="text" name="contractors-name"><br>
             Contract No<br>

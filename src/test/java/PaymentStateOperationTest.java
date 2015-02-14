@@ -5,7 +5,6 @@ import org.junit.Test;
 import util.PaymentStateOperations;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class PaymentStateOperationTest {

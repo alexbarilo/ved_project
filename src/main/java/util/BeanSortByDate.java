@@ -3,6 +3,9 @@ package util;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Comparator;
+/**
+*The class is used as comparator for classes that implements BeanInterface to be sorted.
+*/
 
 public class BeanSortByDate implements Comparator<BeansInterface> {
 

@@ -6,10 +6,16 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/*
+Simple java bean domain which represents Payment. It implements BeanInterface which added to make collection of
+InvoicesBean comparable.
+ */
+
 public class PaymentsBean implements BeansInterface {
 
     private float amount;
     private String date;
+    /*The field represents date in format "dd-mm-yyyy"*/
     private String dateFormatted;
 
     public float getAmount() {

@@ -4,6 +4,7 @@
 <head>
     <title></title>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="scripts/form-validation.js"></script>
 </head>
 <body>
     <jsp:include page="contractors_list.jsp"/>
@@ -18,10 +19,10 @@
                 <td>Date</td>
             </tr>
         </table>
-        <form id="invoice-form" action="ServletInvoiceTable" method="post" enctype="application/x-www-form-urlencoded">
-            <input type="text" name="number" style="width: 109px">
-            <input type="text" name="amount" style="width: 109px">
-            <input type="date" name="date" style="width: 109px">
+        <form id="invoice-form" action="ServletInvoiceTable" method="post" enctype="application/x-www-form-urlencoded" onSubmit="return checkInvoiceForm();">
+            <input type="text" name="number" id="invoice-number" style="width: 109px">
+            <input type="text" name="amount" id="invoice-amount" style="width: 109px">
+            <input type="date" name="date" id="invoice-date" style="width: 109px">
             <input type="hidden" name="jsp-identifier" value="invoices-table">
             <input type="submit" value="Add invoice">
         </form>
@@ -60,9 +61,9 @@
                 <td>Date</td>
             </tr>
         </table>
-        <form id="payment-form" action="ServletInvoiceTable" method="post" enctype="application/x-www-form-urlencoded">
-            <input type="text" name="amount" style="width: 109px">
-            <input type="date" name="date" style="width: 109px">
+        <form id="payment-form" action="ServletInvoiceTable" method="post" enctype="application/x-www-form-urlencoded" onSubmit="return checkPaymentForm();">
+            <input type="text" name="amount" id="payment-amount" style="width: 109px">
+            <input type="date" name="date" id="payment-date" style="width: 109px">
             <input type="hidden" name="jsp-identifier" value="payments-table">
             <input type="submit" value="Add payment">
         </form>

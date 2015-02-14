@@ -1,5 +1,8 @@
 package model;
 
+/*
+Simple java bean domain which represents Contractor.
+ */
 public class ContractorBean {
 
     private String contractorsName;

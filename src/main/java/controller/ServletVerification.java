@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/*The servlet aims to verify a login and if succeeded provide access to the list of contractors*/
+
 public class ServletVerification extends HttpServlet {
 
     private ManagementDAO managementDAO;

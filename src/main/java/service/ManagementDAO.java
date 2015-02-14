@@ -12,6 +12,9 @@ import java.sql.*;
 import java.sql.Statement;
 import java.util.*;
 
+/**
+*The class implements DAO-pattern to provide CRUD-operations.
+*/
 public class ManagementDAO {
 
     private Connection connection;
@@ -30,6 +33,7 @@ public class ManagementDAO {
     }
 
     public List<ContractorBean> addContractor(String contractorsName,String contractNumber) {
+        /*Checking of arguments to avoid throw of exception due to empty values*/
         if (contractorsName.equals("") || contractNumber.equals("")) {
             return getListOfContractors();
         }
@@ -144,7 +148,6 @@ public class ManagementDAO {
     }
 
     public void addInvoicesData(String invoiceNum, String date, float amount, String contractorsName){
-        //String contractorID = null;
         try {
             preparedStatement = connection.prepareStatement("SELECT contractor_id FROM contractors WHERE contractor_name=?");
             preparedStatement.setString(1, contractorsName);

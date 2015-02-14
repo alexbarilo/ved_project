@@ -8,9 +8,13 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
-
+/**
+ *The class supports operations for defining payment state of each Invoice and assigning its proper value due to
+ *date of payment and amount paid.
+ */
 public class PaymentStateOperations {
 
+    /*The method defines one of the three invoice's payment states*/
     public String getPaymentState (float dueState, float sumBalance) {
         if (sumBalance >= 0) {return "paid";}
         else if (sumBalance < 0 && dueState < 0) {
@@ -19,6 +23,8 @@ public class PaymentStateOperations {
         return "- - -";
     }
 
+    /*The method estimates if the invoice's due date is overdue. Its returned value is used in
+    this.getPaymentState()*/
     public float getDueState (String dueDate) {
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -37,6 +43,7 @@ public class PaymentStateOperations {
         return result;
     }
 
+    /*The method sorts List of the InvoicesBean in ascending order and assign proper value of paymentState-field*/
     public List<InvoicesBean> setPaymentStateInBean(List invoicesData, float sumBalance) {
         float dueState;
         float currentInvoiceAmount;

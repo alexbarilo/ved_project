@@ -13,8 +13,8 @@
 
 #invoices-div {
     position: absolute;
-    top: 48px;
-    left: 270px;
+    top: 40px;
+    left: 260px;
 }
 
 #payments-name {
@@ -24,7 +24,7 @@
 
 #payments-div {
     position: absolute;
-    top: 47px;
+    top: 40px;
     left: 1000px;
 }
 

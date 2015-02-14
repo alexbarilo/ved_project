@@ -1,7 +1,6 @@
 import junit.framework.Assert;
 import model.PaymentsBean;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import util.BeanSortByDate;
 import util.BeansInterface;
